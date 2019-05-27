@@ -1,10 +1,11 @@
 package com.lgmn.basicservices.provider.service;
 
+import java.util.Date;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.lgmn.basicservices.api.dto.LgmnSmsCodeDto;
 import com.lgmn.basicservices.api.entity.LgmnSmsCodeEntity;
-import com.lgmn.basicservices.api.repository.LgmnSmsCodeEntityRepository;
-import com.lgmn.basicservices.api.service.LgmnSmsCodeEntityService;
+import com.lgmn.basicservices.api.repository.LgmnSmsCodeRepository;
+import com.lgmn.basicservices.api.service.LgmnSmsCodeService;
 import com.lgmn.common.service.LgmnAbstractService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -14,12 +15,12 @@ import org.springframework.beans.factory.annotation.Autowired;
         protocol = "${dubbo.protocol.id}",
         registry = "${dubbo.registry.id}"
 )
-public class LgmnSmsCodeEntityServiceImpl extends LgmnAbstractService<LgmnSmsCodeEntity, LgmnSmsCodeDto,Integer, LgmnSmsCodeEntityRepository> implements LgmnSmsCodeEntityService {
+public class LgmnSmsCodeServiceImpl extends LgmnAbstractService<LgmnSmsCodeEntity, LgmnSmsCodeDto, Integer, LgmnSmsCodeRepository> implements LgmnSmsCodeService {
 
     @Autowired
-    private LgmnSmsCodeEntityRepository lgmnsmscodeentityRepository;
+    private LgmnSmsCodeRepository lgmnSmsCodeRepository;
 
-    public LgmnSmsCodeEntityServiceImpl(LgmnSmsCodeEntityRepository repository) {
+    public LgmnSmsCodeServiceImpl(LgmnSmsCodeRepository repository) {
         super(repository);
     }
 }

@@ -34,7 +34,7 @@
         </repository>
     </repositories>
   <modules>
-    <module>basic-services-api</module>
+    <module>basic-services-basic</module>
     <module>basic-services-provider</module>
   </modules>
 </project>

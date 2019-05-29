@@ -96,7 +96,7 @@
 
         <dependency>
             <groupId>com.lgmn</groupId>
-            <artifactId>basic-services-api</artifactId>
+            <artifactId>basic-services-basic</artifactId>
             <version>1.0</version>
         </dependency>
     </dependencies>

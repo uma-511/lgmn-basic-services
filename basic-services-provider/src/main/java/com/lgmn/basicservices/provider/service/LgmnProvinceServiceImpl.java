@@ -1,10 +1,10 @@
 package com.lgmn.basicservices.provider.service;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.lgmn.basicservices.api.dto.LgmnProvinceDto;
-import com.lgmn.basicservices.api.entity.LgmnProvinceEntity;
-import com.lgmn.basicservices.api.repository.LgmnProvinceRepository;
-import com.lgmn.basicservices.api.service.LgmnProvinceService;
+import com.lgmn.basicservices.basic.dto.LgmnProvinceDto;
+import com.lgmn.basicservices.basic.entity.LgmnProvinceEntity;
+import com.lgmn.basicservices.basic.repository.LgmnProvinceRepository;
+import com.lgmn.basicservices.basic.service.LgmnProvinceService;
 import com.lgmn.common.service.LgmnAbstractService;
 import org.springframework.beans.factory.annotation.Autowired;
 

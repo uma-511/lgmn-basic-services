@@ -1,11 +1,10 @@
 package com.lgmn.basicservices.provider.service;
 
-import java.util.Date;
 import com.alibaba.dubbo.config.annotation.Service;
-import com.lgmn.basicservices.api.dto.LgmnPeccancyQueryDto;
-import com.lgmn.basicservices.api.entity.LgmnPeccancyQueryEntity;
-import com.lgmn.basicservices.api.repository.LgmnPeccancyQueryRepository;
-import com.lgmn.basicservices.api.service.LgmnPeccancyQueryService;
+import com.lgmn.basicservices.basic.dto.LgmnPeccancyQueryDto;
+import com.lgmn.basicservices.basic.entity.LgmnPeccancyQueryEntity;
+import com.lgmn.basicservices.basic.repository.LgmnPeccancyQueryRepository;
+import com.lgmn.basicservices.basic.service.LgmnPeccancyQueryService;
 import com.lgmn.common.service.LgmnAbstractService;
 import org.springframework.beans.factory.annotation.Autowired;
 

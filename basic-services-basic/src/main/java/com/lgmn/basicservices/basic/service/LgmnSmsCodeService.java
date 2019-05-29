@@ -1,8 +1,8 @@
-package com.lgmn.basicservices.api.service;
+package com.lgmn.basicservices.basic.service;
 
 import java.util.Date;
-import com.lgmn.basicservices.api.dto.LgmnSmsCodeDto;
-import com.lgmn.basicservices.api.entity.LgmnSmsCodeEntity;
+import com.lgmn.basicservices.basic.dto.LgmnSmsCodeDto;
+import com.lgmn.basicservices.basic.entity.LgmnSmsCodeEntity;
 import com.lgmn.common.service.LgmnService;
 
 public interface LgmnSmsCodeService extends LgmnService<LgmnSmsCodeEntity, LgmnSmsCodeDto, Integer> {

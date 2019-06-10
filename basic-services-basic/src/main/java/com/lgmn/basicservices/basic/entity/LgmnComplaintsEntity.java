@@ -1,11 +1,15 @@
 package com.lgmn.basicservices.basic.entity;
 
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
 @Table(name = "lgmn_complaints", schema = "lgmn_basic_services", catalog = "")
+@EntityListeners(AuditingEntityListener.class)
 public class LgmnComplaintsEntity {
     private int id;
     private String context;
@@ -78,6 +82,7 @@ public class LgmnComplaintsEntity {
 
     @Basic
     @Column(name = "create_time", nullable = true)
+    @CreatedDate
     public Timestamp getCreateTime() {
         return createTime;
     }

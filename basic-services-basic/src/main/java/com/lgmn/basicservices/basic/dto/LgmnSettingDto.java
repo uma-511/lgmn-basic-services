@@ -6,15 +6,19 @@ import lombok.Data;
 
 @Data
 public class LgmnSettingDto extends LgmnDto {
-    	@Condition
+    @Condition
     private Integer id;
-    //设置编码	@Condition
+    //设置编码
+    @Condition
     private String code;
-    //设置名称	@Condition
+    //设置名称
+    @Condition
     private String name;
-    //设置值	@Condition
+    //设置值
+    @Condition
     private String value;
-    //设置描述	@Condition
+    //设置描述
+    @Condition
     private String description;
 
 }

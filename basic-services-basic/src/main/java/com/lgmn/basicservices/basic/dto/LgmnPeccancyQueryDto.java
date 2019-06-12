@@ -7,11 +7,13 @@ import lombok.Data;
 
 @Data
 public class LgmnPeccancyQueryDto extends LgmnDto {
-    	@Condition
+    @Condition
     private Integer id;
-    //用户id	@Condition
+    //用户id
+    @Condition
     private String uid;
-    //查询日期	@Condition
+    //查询日期
+    @Condition
     private Date queryDate;
 
 }

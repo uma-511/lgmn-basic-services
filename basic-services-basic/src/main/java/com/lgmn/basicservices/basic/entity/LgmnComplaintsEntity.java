@@ -4,13 +4,14 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
 @Table(name = "lgmn_complaints", schema = "lgmn_basic_services", catalog = "")
 @EntityListeners(AuditingEntityListener.class)
-public class LgmnComplaintsEntity {
+public class LgmnComplaintsEntity implements Serializable {
     private int id;
     private String context;
     private String uid;

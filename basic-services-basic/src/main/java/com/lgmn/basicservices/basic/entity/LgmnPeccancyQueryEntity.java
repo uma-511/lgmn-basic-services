@@ -1,12 +1,13 @@
 package com.lgmn.basicservices.basic.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
 @Table(name = "lgmn_peccancy_query", schema = "lgmn_basic_services", catalog = "")
-public class LgmnPeccancyQueryEntity {
+public class LgmnPeccancyQueryEntity implements Serializable {
     private int id;
     private String uid;
     private Timestamp queryDate;

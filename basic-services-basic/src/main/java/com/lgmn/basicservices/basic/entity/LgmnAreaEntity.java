@@ -1,11 +1,12 @@
 package com.lgmn.basicservices.basic.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "lgmn_area", schema = "lgmn_basic_services", catalog = "")
-public class LgmnAreaEntity {
+public class LgmnAreaEntity implements Serializable {
     private int id;
     private int pid;
     private String name;
